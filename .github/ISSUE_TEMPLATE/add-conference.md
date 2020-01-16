@@ -1,7 +1,7 @@
 ---
 name: Add Conference
 about: Request to add conference
-title: ''
+title: [ADD] conference name
 labels: newconf
 assignees: ''
 
