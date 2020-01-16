@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Finance Conference Deadlines</title>
+    <meta name="author" content="Tyler Beason">
+    <meta content="Call for Paper deadlines for finance conferences." />
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/dataTables.bootstrap.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script type="text/javascript" src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script type="text/javascript" src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+    <div class="container-fluid">
+
+      <h2>Finance Conference Deadlines</h2>
+
+      <p>This is a simple public listing of submission deadlines for academic or research-oriented finance conferences.</p>
+
+      <p>The list is in no way comprehensive. The American Finance Association also maintains a <a href="https://afajof.org/call-for-papers-calendar/">calendar.</a></p>
+
+      <p>If you would like a conference added to the list, please open an <a href="https://github.com/tbeason/financeconferences/issues">issue.</a></p>
+      
+      <div id='table-container'></div>
+
+    </div><!-- /.container -->
+
+    <footer class='footer'>
+      <div class='container-fluid'>
+        <hr />
+        <p class='pull-right'>  <a href='https://github.com/tbeason/financeconferences'>Source Code</a>.  Maintained by <a href='https://tbeason.com'>Tyler Beason</a>, hosted by GitHub.  A fork of <a href='https://github.com/derekeder/csv-to-html-table'>CSV to HTML Table</a> by <a href='http://derekeder.com'>Derek Eder</a></p>
+      </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/jquery.csv.min.js"></script>
+    <script type="text/javascript" src="js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="js/dataTables.bootstrap.js"></script>
+    <script type="text/javascript" src="js/csv_to_html_table.js"></script>
+
+
+    <script type="text/javascript">
+      function format_link(link){
+        if (link)
+          return "<a href='" + link + "' target='_blank'>" + link + "</a>";
+        else
+          return "";
+      }
+
+      CsvToHtmlTable.init({
+        csv_path: 'data/financeconfdeadlines.csv',
+        element: 'table-container', 
+        allow_download: true,
+        csv_options: {separator: ',', delimiter: '"'},
+        datatables_options: {"paging": false, "order": [[ 2, "asc" ]]},
+        custom_formatting: [[5, format_link]]
+      });
+    </script>
+  </body>
+</html>
