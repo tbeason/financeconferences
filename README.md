@@ -1,5 +1,7 @@
 # Finance Conference Deadlines
 
+![GitHub last commit](https://img.shields.io/github/last-commit/tbeason/financeconferences)![GitHub commit activity](https://img.shields.io/github/commit-activity/m/tbeason/financeconferences)
+
 http://tbeason.com/financeconferences/
 
 This is a simple public listing of submission deadlines for academic or research-oriented finance conferences. 
