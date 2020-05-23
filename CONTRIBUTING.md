@@ -8,7 +8,7 @@ If you are adding a conference to the calendar:
  1. Fork the current `master` branch of the repository.
  2. Add your conference to the `data/financeconfdeadlines.csv`. Be sure to follow the existing styles:
      - Informative conference name
-     - Dates follow d/m/yyyy (no leading zeros on day or month, all 4 digits for year)
+     - Dates follow m/d/yyyy (no leading zeros on day or month, all 4 digits for year)
      - Submission fee is just a number (in USD). Blank if not known or other condition.
      - Website beginning with `http://` or `https://`. It will not turn into a clickable link without it.
  3. Submit a Pull Request against the `master` branch of this repository.
