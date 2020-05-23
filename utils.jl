@@ -1,9 +1,14 @@
-using DelimitedFiles
+using DelimitedFiles, Dates
 
 function hfun_btable(params)
     path = params[1]
     csvcontent,headers   = readdlm(path, ',', String, header=true)
     nrows, ncols = size(csvcontent)
+
+    # sort the table so earlier deadlines are first
+    sorting = sortperm(Date.(csvcontent[:,3],"m/d/yyyy"))
+    csvcontent = csvcontent[sorting,:]
+
     io = IOBuffer()
     # write headers
     println(io,"<table class=\"table table-striped table-responsive table-sm\">")
