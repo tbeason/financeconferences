@@ -1,0 +1,29 @@
+/* ==================================================================
+    CUSTOM CSS - SOME STOLEN FROM FRANKLIN.CSS
+================================================================== */
+
+/* New way of prioritization */
+/* linked to <body id="bootstrap-overrides"> */
+#bootstrap-overrides td a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+#bootstrap-overrides td a:hover { 
+    text-decoration: underline;
+  }
+
+
+.page-foot {
+    font-size: 80%;
+    font-family: Arial, serif;
+    color: #a6a2a0;
+    text-align: center;
+    margin-top: 6em;
+    border-top: 1px solid lightgrey;
+    padding-top: 2em;
+    margin-bottom: 4em; }
+
+
+
+

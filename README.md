@@ -17,4 +17,4 @@ This list comes with no guarantees.
 
 ## Credit
 
-Thanks to Derek Eder for creating [csv-to-html-table](https://github.com/derekeder/csv-to-html-table).
+Thanks to Thibaut Lienart for creating [Franklin.jl](https://github.com/tlienart/Franklin.jl).
