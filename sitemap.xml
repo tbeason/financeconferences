@@ -2,20 +2,14 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
-    <loc>index.html</loc>
-    <lastmod>2021-12-10</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-</url>
-<url>
     <loc>CODE_OF_CONDUCT/index.html</loc>
-    <lastmod>2021-12-10</lastmod>
+    <lastmod>2022-01-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
 <url>
     <loc>CONTRIBUTING/index.html</loc>
-    <lastmod>2021-12-10</lastmod>
+    <lastmod>2022-01-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
